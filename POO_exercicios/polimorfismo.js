@@ -41,14 +41,21 @@
   class ContaPoupanca extends Conta {
      constructor(numero, titular) {
       super(numero, titular);
-      this.mesesGuardados = 1
+      this.mesesGuardados = 0
     }
 
-    deposita(valor,mesesGuardados) {
-        this.valor += (valor*(1,01^this.mesesGuardados));
-      }
+    depositaP(valor){
+        this.saldo += valor
+    };
 
-  }
+    renderSaldo(mesesGuardados) {
+        this.saldo += (valor*Math.pow(1.01,this.mesesGuardados));
+       
+    getSaldo() {
+            return this.saldo +renderSaldo();
+          }     
+
+      }
   
 //   let jose = new ContaCorrente(321, 'Jose Jr');
 //   console.log('OBJETO', jose);
@@ -57,5 +64,12 @@
 //   jose.deposita(100);
 //   console.log(jose.getSaldo());
 
+
 let maria = new ContaPoupanca(321,'Maria Auxiliadora')
-console.log('OBJETO', maria)
+//console.log('OBJETO', maria)//transforma em objeto -par chave/valor
+maria.depositaP(1000)
+//maria.renderSaldo(2)
+console.log(maria)
+
+
+
