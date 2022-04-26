@@ -49,9 +49,9 @@
     };
 
     renderSaldo(mesesGuardados) {
-        this.saldo += (valor*Math.pow(1.01,this.mesesGuardados));
+        this.saldo += (valor*Math.pow(0.9,this.mesesGuardados));
        
-    getSaldo() {
+    getSaldo() {//será que dá pra usar recursividade aqui?
             return this.saldo +renderSaldo();
           }     
 

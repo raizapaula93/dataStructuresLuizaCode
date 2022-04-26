@@ -6,7 +6,7 @@
        #idade
 
     constructor(idade) {
-      this.#idade = idade;//eu não consigo  encapsular um parâmetro que eu tenhoq eu passar sem ?
+      this.#idade = idade;//não consegui encapsular sem iniciar. 
     }
   
     // atribuiIdade(idade) { somente comentado, sem dúvidas
