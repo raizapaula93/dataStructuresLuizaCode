@@ -65,7 +65,7 @@
 //   console.log(jose.getSaldo());
 
 
-let maria = new ContaPoupanca(321,'Maria Auxiliadora')
+let maria = new ContaPoupanca (321,'Maria Auxiliadora')
 //console.log('OBJETO', maria)//transforma em objeto -par chave/valor
 maria.depositaP(1000)
 //maria.renderSaldo(2)
